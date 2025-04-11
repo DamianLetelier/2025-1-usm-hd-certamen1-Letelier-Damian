@@ -1,1 +1,2 @@
-# 2025-1-usm-hd-certamen1-apellido-nombre-
+Damian Letelier Vuskovic.
+Rut:21-322-758-0
