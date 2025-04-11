@@ -9,10 +9,27 @@
 <body>
 
   <!-- Navbar simple -->
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Damian Letelier</a>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Damian letelier</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#carouselExample">Inicio <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tabla">Proyecto semestral</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Semblanza">semblanza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#EstadoArte">estado del arte</a>
+          </li>
+        </ul>
   </nav>
   <div class="p-3 mb-2 bg-dark text-white"><div class="bg-dark"></div>
    <div id="carouselExample" class="carousel slide">
@@ -41,43 +58,73 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!-- Sección Sobre Nosotros -->
+
   <section class="py-5 text-center">
-    <div class="container">
-      <h2>Aegis code</h2>
-      <p>Ofrecemos soluciones innovadoras y estamos comprometidos con la excelencia.</p>
+    <h2 id="tabla">Tabla html</h2>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Nombre proyecto</th>
+          <th scope="col">Numero del equipo</th>
+          <th scope="col">Objetivo</th>
+          <th scope="col">Problematica a solucionar</th>
+          <th scope="col">Visión</th>
+          <th scope="col">Misión</th>
+          <th scope="col">Lema</th>
+          <th scope="col">Valores</th>
+          <th scope="col">Elementos diferenciadores</th>
+        </tr>
+      </thead>
+      <tbody text-align="text-left">
+        <tr>
+          <th scope="row">Aegis code</th>
+          <td>09</td>
+          <td>Promover seguridad contra phishing, el uso del multifactor autentificación, y registro/log de todas las actividades del sistema</td>
+          <td>Las Pymes enfrentan amenazas cibernéticas crecientes, pero carecen de soluciones de seguridad efectivas. Esto genera vulnerabilidades como el phishing, la pérdida de datos y la falta de trazabilidad de actividades críticas en sus sistemas.</td>
+          <td>Ser una solución en protección digital, suficientemente reconocida por fomentar uso de ciberseguridad mediante tecnologías accesibles, enfocadas en prevenir ataques de phishing, fortaleciendo la autenticación y garantizando trazabilidad de acciones con un registro.</td>
+          <td>Promover entornos digitales más seguros mediante la implementación de herramientas efectivas contra el phishing, <br>
+          el fomento del uso de autenticación multifactor y el registro detallado de actividades del sistema.</td>
+          <td>Aegis Code: donde la protección se escribe en código.</td>
+          <td>Accesibilidad:
+            Nuestras soluciones buscan ser claras y útiles para todo tipo de usuarios.<br>
+           Confianza y transparencia:
+            Registrar cada acción del sistema para que siempre uno sepa qué ocurre con los datos.<br>
+           Protección continua:
+            Reforzar la seguridad con autenticación múltiple.<br>
+          </td>
+          <td>Se enfoca en evitar ataques desde el inicio con 2FA y filtros anti-phishing.<br>
+            Registra todas las acciones del sistema para mayor control y trazabilidad.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="py-5 text-center">
+    <div class="container row">
+      <h1 id="Semblanza">Semblanza</h1>
+      <div class="card" style="width: 18rem;">
+        <img src="Damian.Letelier.jpeg" class="card-img-top" alt="...">
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Nombre completo: Damian Letelier Vuskovic</h5>
+          <p class="card-text">Edad: 21 Años</p>
+          <p class="card-text">Ciudad origen: Rancagua</p>
+          <p class="card-text">Hobbies: ir a la u, escuchar musica y no echarse ramos.</p>
+          <p class="card-text">Especialización Proyecto Software: Desarrollador backend y Gestor de base de datos</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Sección Servicios -->
-  <section class="py-5 bg-light text-center">
-    <div class="container">
-      <h2>Servicios</h2>
-      <p>Desarrollo web, diseño gráfico y marketing digital.</p>
-    </div>
-  </section>
-
-  <!-- Formulario de Contacto -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center">Contáctanos</h2>
-      <form class="mx-auto" style="max-width: 500px;">
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Nombre" required>
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Correo electrónico" required>
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
+    <section class="py-5 text-center">
+      <div class="container">
+        <h1 id="EstadoArte">Estado del arte</h1>
+        <h2>Aegis code</h2>
+        <p>Ayudar a pymes con seguridad contra phishing y cyberataques</p>
+      </div>
+    </section>
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     &copy; 2025 MiWeb
